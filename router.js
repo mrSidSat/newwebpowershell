@@ -16,6 +16,9 @@ router.get("/home",function(req,res){
 router.get("/login",function(req,res){
   res.render("login");
 })
+router.get("/timeline",function(req,res){
+  res.render("timeline");
+  });
 router.get("/overview",function(req,res){
   res.render("overview");
 });
@@ -39,6 +42,7 @@ router.get("/table",function(req,res)
 {
   res.render("table");
 })
+
 router.post("/Login.html",function(req){
   const email=req.body.email;
 
